@@ -1,5 +1,19 @@
-//bacgrounds
-$body-bg: #ff55;
+// colors
+$light_400: #E5E5E5;
+$light_500: #A6A6A6;
+$black_500 :#010E1A;
+$white_500 :#FEFEFE;
+$gray_600 :#525760;
+$green_400: #AFF1D1;
+$link_color:#096394;
+$deep_blue:#035D8E;
+$icon_linear:linear-gradient(180deg, #AFF1D1 0%, #006493 100%);
+
 
 //fonts
-$basic-family: 'Roboto', Arial, Helvetica, sans-serif;
+$basic_family: 'Source Sans Pro',
+Arial,
+Helvetica,
+sans-serif;
+
+$text_base: 16px;
