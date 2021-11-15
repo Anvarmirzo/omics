@@ -12,18 +12,20 @@
 
 @import "blocks/header";
 @import "blocks/footer";
+@import "blocks/subscribe";
+@import "blocks/more-product";
 @import 'swiper-config';
 
 body {
-	font-family: $basic_family;
+  font-family: $basic_family;
 
-	&.hidden {
-		overflow: hidden;
-	}
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 h1,
@@ -34,16 +36,38 @@ h5,
 h6,
 p,
 a {
-	line-height: 1.25;
+  line-height: 1.25;
 }
 
 .sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.title {
+  position: relative;
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+  color: $black_500;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #AFF1D1 0%, #0085FF 97.34%);
+  }
 }

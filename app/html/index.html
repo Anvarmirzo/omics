@@ -11,11 +11,13 @@
 </head>
 
 <body>
-    <div class="test">
-        @@include('blocks/header.html')
-        <main>Content</main>
-        @@include('blocks/footer.html')
-    </div>
+    @@include('blocks/header.html')
+    <!-- ! Main -->
+    <main>
+        @@include('blocks/more-product.html')
+        @@include('blocks/subscribe.html')
+    </main>
+    @@include('blocks/footer.html')
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
