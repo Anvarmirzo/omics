@@ -6,6 +6,10 @@
   margin-top: 48px;
 
   &>*~* {
+    &:nth-child(n+3) {
+      margin-top: 20px;
+    }
+
     @include block_991 {
       margin-top: 20px;
     }
@@ -15,6 +19,7 @@
 .more-product-item {
   padding: 40px 44px;
   border-radius: 6px;
+  height: 100%;
   text-align: center;
   color: #fff;
   background-size: cover;

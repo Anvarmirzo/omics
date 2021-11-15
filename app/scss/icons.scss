@@ -1,38 +1,46 @@
 .icon {
-	display: inline-block;
-	font-size: 0;
-	overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
 
-	&.burger {
-		width: 32px;
-		height: 20px;
-		background-image: url('../img/svg/burger.svg');
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
+  &.burger {
+    width: 32px;
+    height: 20px;
+    background-image: url('../img/svg/burger.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-	&.chevron-down {
-		width: 11px;
-		height: 11px;
-		margin-left: 5px;
-		background-image: url('../img/svg/chevron.svg');
-		transform: rotate(180deg);
+  &.chevron-down {
+    width: 11px;
+    height: 11px;
+    margin-left: 5px;
+    background-image: url('../img/svg/chevron.svg');
+    transform: rotate(180deg);
 
-		&.active {
-			transform: rotate(270deg);
-		}
-	}
+    &.active {
+      transform: rotate(270deg);
+    }
+  }
 
-	&.mail {
-		background-image: url('../img/svg/mail.svg');
-		width: 24px;
-		height: 24px;
-	}
+  &.mail {
+    background-image: url('../img/svg/mail.svg');
+    width: 24px;
+    height: 24px;
+  }
 
-	&.phone {
-		background-image: url('../img/svg/phone.svg');
-		width: 24px;
-		height: 24px;
-	}
+  &.phone {
+    background-image: url('../img/svg/phone.svg');
+    width: 24px;
+    height: 24px;
+  }
+
+  &.arrow-right {
+    background-image: url('../img/svg/arrow-right.svg');
+    width: 24px;
+    height: 24px;
+  }
 }
