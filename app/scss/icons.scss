@@ -23,4 +23,16 @@
 			transform: rotate(270deg);
 		}
 	}
+
+	&.mail {
+		background-image: url('../img/svg/mail.svg');
+		width: 24px;
+		height: 24px;
+	}
+
+	&.phone {
+		background-image: url('../img/svg/phone.svg');
+		width: 24px;
+		height: 24px;
+	}
 }
