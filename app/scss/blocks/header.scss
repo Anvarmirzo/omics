@@ -8,6 +8,10 @@
 }
 
 .header-nav {
+  box-shadow: 0px 100px 213px rgba(0, 0, 0, 0.07), 0px 22.3363px 47.5763px rgba(0, 0, 0, 0.0183957), 0px 6.6501px 14.1647px rgba(0, 0, 0, 0.0146149);
+}
+
+.header-nav__container {
   position: relative;
   display: flex;
   justify-content: space-between;
