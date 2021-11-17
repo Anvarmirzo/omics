@@ -1,4 +1,9 @@
+.news-page {
+  padding-top: 48px;
+}
+
 .news-page__row {
+
   &>*:nth-child(n+3) {
     margin-top: 32px;
   }
@@ -48,6 +53,10 @@
 
   @include block_767 {
     flex-direction: column;
+
+    .w-1\/2 {
+      width: 100%;
+    }
   }
 
   img {
@@ -55,9 +64,7 @@
     height: 100%;
   }
 
-  .w-1\/2 {
-    width: 100%;
-  }
+
 }
 
 .news-page-item__content {
