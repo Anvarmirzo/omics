@@ -14,10 +14,12 @@
 @import "blocks/footer";
 @import "blocks/subscribe";
 @import "blocks/more-product";
+@import 'blocks/breadcrumbs';
 @import 'swiper-config';
 
 @import 'home';
 @import 'news-page';
+@import 'news-open';
 
 body {
   font-family: $basic_family;
