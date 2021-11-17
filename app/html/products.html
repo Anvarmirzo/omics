@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Omics">
+	<title>Document</title>
+	<link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	@@include('blocks/nav.html')
+	@@include('blocks/breadcrumbs.html')
+	<!-- ! Main -->
+	<main>
+		<!-- ! Products -->
+		<section class="products products-page">
+			<div class="container">
+				<h2 class="title">our products</h2>
+				<p class="subtitle">We provide free access to two submodules of OmicsChart IO: </p>
+				@@include('blocks/products.html')
+				<div class="products-page__subscribe">@@include('blocks/subscribe.html')</div>
+			</div>
+		</section>
+	</main>
+	@@include('blocks/footer.html')
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+</body>
+
+</html>
