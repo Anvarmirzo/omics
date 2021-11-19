@@ -25,6 +25,7 @@
 @import 'products-open';
 @import 'news-open';
 @import 'blog-open';
+@import 'about';
 
 body {
   font-family: $basic_family;
@@ -97,4 +98,8 @@ a {
 
 .text-medium {
   font-weight: 500;
+}
+
+.text-bold {
+  font-weight: 700;
 }

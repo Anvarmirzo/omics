@@ -1,0 +1,231 @@
+.about-page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 141px 0 142px;
+  background-image: url('../img/about/about-hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 6px 6px;
+
+  @include block_480 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.about-page-header__content {
+  width: 406px;
+  max-width: 100%;
+}
+
+.about-page__title {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+}
+
+.about-page__subtitle {
+  margin-top: 8px;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: $white_500;
+}
+
+.company__subtitle {
+  margin-top: 40px;
+}
+
+.company__quote {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0 67px;
+  padding: 0 40px;
+
+  @include block_767 {
+    flex-direction: column;
+    margin-bottom: 32px;
+    text-align: center;
+
+    &.vision__quote {
+      flex-direction: column-reverse;
+
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+
+  &>*~* {
+    margin-left: 50px;
+
+    @include block_767 {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+
+.company__img {
+  position: relative;
+
+  img {
+    border-radius: 6px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(16, 54, 67, 0.4);
+    ;
+  }
+}
+
+.vision__subtitle {
+  margin-top: 32px;
+}
+
+.team {
+  padding-top: 64px;
+  width: 846px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.team__container {
+  padding: 0;
+
+  @include block_575 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.team-list {
+  &>*~*.team-item {
+    margin-top: 56px;
+  }
+}
+
+.team-item {
+  display: flex;
+  margin-top: 32px;
+
+  @include block_767 {
+    flex-direction: column;
+  }
+
+  &>*~* {
+    margin-left: 36px;
+
+    @include block_767 {
+      margin-left: 0;
+      margin-top: 24px;
+    }
+  }
+}
+
+.team-img {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.team__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  padding: 16px 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(16, 47, 62, 0.8);
+}
+
+.team__name {
+  font-weight: 600;
+  font-size: 20px;
+  color: $white_500;
+}
+
+.team__role {
+  font-weight: 300;
+  font-size: 14px;
+  color: $white_500;
+}
+
+.team__contacts {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+
+  &>*~* {
+    margin-left: 8px;
+  }
+}
+
+.team__description {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  flex: 1;
+  font-weight: 300;
+  font-size: $text_base;
+  letter-spacing: 0.005em;
+  color: $black_500;
+
+  &>*~* {
+    margin-top: 16px;
+  }
+}
+
+.careers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+  padding: 40px 98px 56px;
+  background-color: #F8F8F8;
+  border-radius: 6px;
+
+  @include block_767 {
+    padding: 30px 20px;
+  }
+}
+
+.careers__title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+  color: $black_500;
+}
+
+.careers__subtitle {
+  font-weight: 300;
+  font-size: $text_base;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: $black_500;
+  margin-top: 24px;
+}
