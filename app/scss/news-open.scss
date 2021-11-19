@@ -16,7 +16,7 @@
   display: block;
   width: max-content;
   margin: 16px auto 0;
-  font-size: 16px;
+  font-size: $text_base;
   color: $gray_600;
 }
 
@@ -37,7 +37,7 @@
   padding-left: 38px;
   padding-right: 38px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: $text_base;
   letter-spacing: 0.005em;
   color: $black_500;
 
@@ -60,7 +60,7 @@
 
 .news-open-share__title {
   font-weight: 300;
-  font-size: 16px;
+  font-size: $text_base;
   color: $black_500;
 }
 
@@ -129,7 +129,7 @@
 
 .news-open-latest__link {
   font-weight: 600;
-  font-size: 16px;
+  font-size: $text_base;
   text-decoration-line: underline;
   color: $black_500;
   margin-top: 3px;
