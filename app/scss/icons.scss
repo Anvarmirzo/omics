@@ -67,4 +67,58 @@
     width: 24px;
     height: 24px;
   }
+
+  &.bar-graph {
+    background-image: url('../img/svg/bar-graph.svg');
+    width: 50px;
+    height: 50px;
+  }
+
+  &.compass {
+    background-image: url('../img/svg/compass.svg');
+    width: 50px;
+    height: 50px;
+  }
+
+  &.direction {
+    background-image: url('../img/svg/directions.svg');
+    width: 50px;
+    height: 50px;
+  }
+
+  &.cloud {
+    background-image: url('../img/svg/cloud.svg');
+    width: 50px;
+    height: 50px;
+  }
+
+  &.cloud-shield {
+    background-image: url('../img/svg/cloud-shield.svg');
+    width: 50px;
+    height: 50px;
+  }
+
+  &.cloud-web {
+    background-image: url('../img/svg/cloud-web.svg');
+    width: 50px;
+    height: 50px;
+  }
+
+  &.users {
+    background-image: url('../img/svg/users.svg');
+    width: 50px;
+    height: 50px;
+  }
+
+  &.bolt {
+    background-image: url('../img/svg/bolt.svg');
+    width: 50px;
+    height: 50px;
+  }
+
+  &.server {
+    background-image: url('../img/svg/server.svg');
+    width: 50px;
+    height: 50px;
+  }
 }

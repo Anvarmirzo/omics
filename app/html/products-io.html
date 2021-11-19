@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Omics">
+	<title>Document</title>
+	<link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	@@include('blocks/nav.html')
+	<header class="products-open-header">
+		<div class="products-open-header__content">
+			<h1 class="products-open__title">OmicsChart IO</h1>
+			<p class="products-open__subtitle">is a clinical trial biomarker data analysis software platform for
+				immuno-oncology.</p>
+			<a class="btn mint-btn" href="#">try it now</a>
+		</div>
+	</header>
+	@@include('blocks/breadcrumbs.html')
+	<!-- ! Main -->
+	<main>
+		<!-- ! Features -->
+		<section class="features">
+			<div class="container">
+				<h2 class="title">features</h2>
+				<p class="subtitle">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+				<div class="row features__row">
+					<article class="col-lg-4">
+						<div class="features-item">
+							<p class="features-item__title"><span class="icon compass"></span>Intuitive</p>
+							<p class="feautures-item__subtitle">Many desktop publishing packages and web page editors now use Lorem
+								Ipsum as their default model text,
+								and a search for</p>
+						</div>
+					</article>
+					<article class="col-lg-4">
+						<div class="features-item">
+							<p class="features-item__title"><span class="icon bar-graph"></span>Structured</p>
+							<p class="feautures-item__subtitle">Many desktop publishing packages and web page editors now use Lorem
+								Ipsum as their default model text,
+								and a search for</p>
+						</div>
+					</article>
+					<article class="col-lg-4">
+						<div class="features-item">
+							<p class="features-item__title"><span class="icon direction"></span>Comprehensive</p>
+							<p class="feautures-item__subtitle">Many desktop publishing packages and web page editors now use Lorem
+								Ipsum as their default model text,
+								and a search for</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ! About -->
+		<section class="about-omics">
+			<div class="container">
+				<h2 class="title">about omicschart io</h2>
+				<p class="about-omics__subtitle"><span class="text-medium">OmicsChart IO</span> it’s a web-based platform that
+					processes and
+					visualizes clinical and
+					high-dimensional molecular data in a
+					patient-centered manner, focusing on data interpretation and scientific significance.
+				</p>
+				<div class="about-omics-quote">
+					<figure class="about-omics-quote__figure">
+						<img src="../img/products/about-omicsio.png" alt="DNA color sequencing method">
+						<figcaption class="about-omics-quote__caption">DNA color sequencing method</figcaption>
+					</figure>
+					<div class="about-omics-quote__text">
+						<p>It integrates multiple sources of molecular and clinical data and compares the findings to publicly
+							available datasets,
+							allowing for easier interpretation and conclusions.</p>
+						<p>OmicsChart IO will also include several modules that are distributed as individual products as well:
+							<a class="about-omics__link" href="#">OmicsChart TCGA/IOBE</a> and <a class="about-omics__link"
+								href="#">OmicsChart Neopep</a>.
+						</p>
+					</div>
+				</div>
+
+				<div class="omics-text">
+					<p>Motivation The composition and density of immune cells in the tumor microenvironment profoundly influence
+						tumor
+						progression and success of anti-cancer therapies. Flow cytometry, immunohistochemistry staining, or
+						single-cell
+						sequencing is often unavailable such that we rely on computational methods to estimate the immune-cell
+						composition from
+						bulk RNA-sequencing (RNA-seq) data. Various methods have been proposed recently, yet their capabilities and
+						limitations
+						have not been evaluated systematically. A general guideline leading the research community through cell type
+						deconvolution is missing.
+					</p>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+						in
+						some form,
+						by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
+						passage of
+						Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the
+						Lorem
+						Ipsum
+						generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+						generator
+						on the
+						Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
+						structures,
+						to
+						generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
+						repetition,
+						injected humour, or non-characteristic words etc.</p>
+				</div>
+				@@include('blocks/try.html')
+			</div>
+		</section>
+
+		<!-- ! Products -->
+		<section class="products products-page">
+			<div class="container">
+				<h2 class="title">more product</h2>
+				<p class="subtitle">We provide free access to two submodules of OmicsChart IO: </p>
+				@@include('blocks/products.html')
+				<div class="products-page__subscribe">@@include('blocks/subscribe.html')</div>
+			</div>
+		</section>
+	</main>
+	@@include('blocks/footer.html')
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+</body>
+
+</html>
