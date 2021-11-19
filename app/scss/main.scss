@@ -15,12 +15,14 @@
 @import "blocks/subscribe";
 @import "blocks/more-product";
 @import 'blocks/breadcrumbs';
+@import 'blocks/try';
 @import 'swiper-config';
 
 @import 'home';
 @import 'news-page';
 @import 'blog-page';
 @import 'products-page';
+@import 'products-open';
 @import 'news-open';
 @import 'blog-open';
 
@@ -91,4 +93,8 @@ a {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.text-medium {
+  font-weight: 500;
 }
