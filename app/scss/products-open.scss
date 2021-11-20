@@ -1,21 +1,21 @@
 .products-open-header {
   padding: 76px 0 54px;
-  background-image: url('../img/news-hero/1.png');
+  background-image: url('../img/news-hero/1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0 0 6px 6px;
 
   &.omics-iobe {
-    background-image: url('../img/news-hero/2.png');
+    background-image: url('../img/news-hero/2.jpg');
   }
 
   &.omics-tcga {
-    background-image: url('../img/news-hero/3.png');
+    background-image: url('../img/header/tcga.jpg');
   }
 
   &.omics-neopep {
-    background-image: url('../img/news-hero/4.png');
+    background-image: url('../img/news-hero/4.jpg');
 
     .products-open-header__content {
       width: 422px;
@@ -149,6 +149,9 @@
 
   img {
     border-radius: 6px;
+    width: 268px;
+    height: 277px;
+    max-width: 100%;
   }
 
   @include block_767 {
