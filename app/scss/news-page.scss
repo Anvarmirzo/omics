@@ -114,10 +114,18 @@
 
 .news-page-item__link {
   display: flex;
+  width: max-content;
   font-size: $text_base;
   color: #096394;
 
+  &:hover {
+    .icon {
+      margin-left: 20px;
+    }
+  }
+
   .icon {
+    transition: all 0.3s;
     margin-left: 8px;
     background-image: url('../img/svg/arrow-right-dark.svg');
   }
