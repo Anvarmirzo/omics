@@ -84,7 +84,7 @@ function img() {
 				imagemin({
 					interlaced: false,
 					progressive: false,
-					optimizationLevel: 1,
+					optimizationLevel: 0,
 					svgoPlugins: [{ removeViewBox: false }],
 				}),
 			)
