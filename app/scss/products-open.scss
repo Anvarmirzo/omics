@@ -66,9 +66,7 @@
   margin-top: 50px;
 
   @include block_991 {
-    &>*~* {
-      margin-top: 20px;
-    }
+    row-gap: 20px;
   }
 }
 
@@ -128,20 +126,13 @@
   display: flex;
   margin: 32px 0 67px;
   padding: 0 40px;
+  gap: 20px 50px;
 
   @include block_767 {
     flex-direction: column;
     padding: 0;
   }
 
-  &>*~* {
-    margin-left: 50px;
-
-    @include block_767 {
-      margin-left: 0;
-      margin-top: 20px;
-    }
-  }
 }
 
 .about-omics-quote__figure {
@@ -181,9 +172,7 @@
   flex-direction: column;
   justify-content: center;
 
-  &>*~* {
-    margin-top: 16px !important;
-  }
+  row-gap: 16px;
 }
 
 .about-omics__subtitle {
@@ -197,7 +186,7 @@
 }
 
 .omics-text {
-  &>*~* {
-    margin-top: 24px;
-  }
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }

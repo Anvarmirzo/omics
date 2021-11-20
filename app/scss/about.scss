@@ -45,6 +45,7 @@
   justify-content: space-between;
   margin: 32px 0 67px;
   padding: 0 40px;
+  column-gap: 50px;
 
   @include block_767 {
     flex-direction: column;
@@ -57,16 +58,6 @@
       p {
         margin-top: 20px;
       }
-    }
-  }
-
-
-  &>*~* {
-    margin-left: 50px;
-
-    @include block_767 {
-      margin-left: 0;
-      margin-top: 20px;
     }
   }
 }
@@ -115,26 +106,17 @@
 }
 
 .team-list {
-  &>*~*.team-item {
-    margin-top: 56px;
-  }
+  display: flex;
+  flex-direction: column;
+  row-gap: 56px;
 }
 
 .team-item {
   display: flex;
-  margin-top: 32px;
+  gap: 24px 36px;
 
   @include block_767 {
     flex-direction: column;
-  }
-
-  &>*~* {
-    margin-left: 36px;
-
-    @include block_767 {
-      margin-left: 0;
-      margin-top: 24px;
-    }
   }
 }
 
@@ -185,13 +167,12 @@
   display: flex;
   align-items: center;
   margin-top: 8px;
-
-  &>*~* {
-    margin-left: 8px;
-  }
+  gap: 8px;
 }
 
 .team__description {
+  display: flex;
+  flex-direction: column;
   padding-top: 21px;
   padding-bottom: 21px;
   flex: 1;
@@ -199,10 +180,7 @@
   font-size: $text_base;
   letter-spacing: 0.005em;
   color: $black_500;
-
-  &>*~* {
-    margin-top: 16px;
-  }
+  gap: 16px;
 }
 
 .careers {
