@@ -3,7 +3,12 @@
   flex-wrap: wrap;
   font-size: 14px;
   color: $gray_600;
-  margin-top: 32px;
+  margin-top: 102px;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
 
   &>*~*,
   a {
