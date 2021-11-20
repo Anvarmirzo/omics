@@ -4,16 +4,7 @@
 
 .more-product__row {
   margin-top: 48px;
-
-  &>*~* {
-    &:nth-child(n+3) {
-      margin-top: 20px;
-    }
-
-    @include block_991 {
-      margin-top: 20px;
-    }
-  }
+  row-gap: 20px;
 }
 
 .more-product-item {
@@ -47,10 +38,7 @@
 
     @include block_480 {
       flex-direction: column;
-
-      &>*~* {
-        margin-top: 15px;
-      }
+      row-gap: 15px;
     }
   }
 }

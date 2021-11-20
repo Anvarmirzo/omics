@@ -77,9 +77,25 @@
 }
 
 .blog-page-item__info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
   margin-top: 37px;
 
   @include block_1440 {
     margin-top: 10px;
   }
+
+  @include block_480 {
+    flex-direction: column;
+    align-items: flex-start;
+
+    svg {
+      display: none;
+    }
+  }
+}
+
+.author {
+  white-space: nowrap;
 }

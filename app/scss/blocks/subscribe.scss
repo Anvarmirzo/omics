@@ -12,13 +12,19 @@
   @include block_991 {
     text-align: center;
   }
+
+  @include block_480 {
+    padding: 24px;
+  }
 }
 
 .subscribe__row {
   align-items: center;
+  row-gap: 20px;
 
-  &>*~* {
-    margin-top: 20px;
+  @include block_480 {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -65,6 +71,10 @@
     max-width: 70%;
     font-size: $text_base;
   }
+
+  @include block_480 {
+    font-size: 13px;
+  }
 }
 
 .subscribe__btn {
@@ -76,5 +86,9 @@
 
   @include block_575 {
     padding: 10px;
+  }
+
+  @include block_480 {
+    font-size: 13px;
   }
 }

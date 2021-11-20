@@ -15,10 +15,7 @@
     flex-direction: column;
     text-align: center;
     padding: 20px;
-
-    &>*~* {
-      margin-top: 20px;
-    }
+    row-gap: 20px;
   }
 
   .mint-btn {
