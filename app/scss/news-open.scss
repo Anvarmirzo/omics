@@ -87,6 +87,10 @@
   padding: 16px 0 30px;
   border-top: 1px solid $light_400;
 
+  .container {
+    padding: 0;
+  }
+
   @include block_575 {
     margin-top: 40px;
   }
@@ -120,6 +124,10 @@
   &:hover {
     border: 1px solid #F8F7F7;
     box-shadow: 0px 2px 23px rgba(0, 0, 0, 0.07), 0px 6.6501px 14.1647px rgba(0, 0, 0, 0.0146149);
+
+    .news-open-latest__link {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -129,9 +137,9 @@
 }
 
 .news-open-latest__link {
+  transition: all 0.3s;
   font-weight: 600;
   font-size: $text_base;
-  text-decoration-line: underline;
   color: $black_500;
   margin-top: 3px;
 }
