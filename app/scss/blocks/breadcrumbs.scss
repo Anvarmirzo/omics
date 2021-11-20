@@ -5,6 +5,11 @@
   color: $gray_600;
   margin-top: 102px;
 
+  li {
+    display: flex;
+    align-items: center;
+  }
+
   &>*~*,
   a {
     margin-left: 4px;
