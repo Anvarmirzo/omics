@@ -8,6 +8,11 @@
 }
 
 .header-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
   background-color: #fff;
   box-shadow: 0px 100px 213px rgba(0, 0, 0, 0.07), 0px 22.3363px 47.5763px rgba(0, 0, 0, 0.0183957), 0px 6.6501px 14.1647px rgba(0, 0, 0, 0.0146149);
 }
@@ -21,7 +26,7 @@
   padding-bottom: 17px;
   z-index: 2;
   font-size: $text_base;
-  height: 11vh;
+  height: 70px;
 
   @include block_767 {
     position: relative;
