@@ -81,6 +81,8 @@
   gap: 8px;
   align-items: center;
   margin-top: 37px;
+  color: $gray_600;
+  font-size: 14px;
 
   @include block_1440 {
     margin-top: 10px;
