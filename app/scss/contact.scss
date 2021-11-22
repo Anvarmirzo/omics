@@ -14,7 +14,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -11vh;
   text-align: center;
 
   a {
@@ -48,8 +47,13 @@
   display: flex;
   align-items: center;
   margin-top: 32px;
+  gap: 16px;
 
-  &>*~* {
-    margin-left: 16px;
+  a {
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

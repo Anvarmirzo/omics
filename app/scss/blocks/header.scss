@@ -8,6 +8,11 @@
 }
 
 .header-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
   background-color: #fff;
   box-shadow: 0px 100px 213px rgba(0, 0, 0, 0.07), 0px 22.3363px 47.5763px rgba(0, 0, 0, 0.0183957), 0px 6.6501px 14.1647px rgba(0, 0, 0, 0.0146149);
 }
@@ -21,7 +26,7 @@
   padding-bottom: 17px;
   z-index: 2;
   font-size: $text_base;
-  height: 11vh;
+  height: 70px;
 
   @include block_767 {
     position: relative;
@@ -35,6 +40,7 @@
 .nav-menu {
   display: flex;
   align-items: center;
+  column-gap: 10px;
 
   @include block_767 {
     display: none;
@@ -47,17 +53,10 @@
     height: 90vh;
     overflow-y: auto;
     background-color: #fff;
+    gap: 8px 0;
 
     &.active {
       display: flex;
-    }
-  }
-
-  &>*~* {
-    margin-left: 10px;
-
-    @include block_767 {
-      margin-left: 0;
     }
   }
 
@@ -177,10 +176,14 @@
   filter: drop-shadow(0px 22px 108px rgba(1, 14, 26, 0.05)) drop-shadow(0px 10.7695px 41.7339px rgba(1, 14, 26, 0.0334873)) drop-shadow(0px 5.19447px 19.7803px rgba(1, 14, 26, 0.0275707)) drop-shadow(0px 2.40596px 8.98597px rgba(1, 14, 26, 0.0215391)) drop-shadow(0px 0.865844px 3.16245px rgba(1, 14, 26, 0.0129388));
 
   @include block_767 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     filter: none;
     padding: 0 0 15px 0;
     border-bottom: 1px solid $light_400;
     border-radius: 0;
+
   }
 
   a {

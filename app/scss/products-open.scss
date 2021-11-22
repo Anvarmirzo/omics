@@ -1,21 +1,21 @@
 .products-open-header {
-  padding: 76px 0 54px;
-  background-image: url('../img/news-hero/1.png');
+  padding: 146px 0 54px;
+  background-image: url('../img/news-hero/1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0 0 6px 6px;
 
   &.omics-iobe {
-    background-image: url('../img/news-hero/2.png');
+    background-image: url('../img/news-hero/2.jpg');
   }
 
   &.omics-tcga {
-    background-image: url('../img/news-hero/3.png');
+    background-image: url('../img/header/tcga.jpg');
   }
 
   &.omics-neopep {
-    background-image: url('../img/news-hero/4.png');
+    background-image: url('../img/news-hero/4.jpg');
 
     .products-open-header__content {
       width: 422px;
@@ -66,9 +66,7 @@
   margin-top: 50px;
 
   @include block_991 {
-    &>*~* {
-      margin-top: 20px;
-    }
+    row-gap: 20px;
   }
 }
 
@@ -128,20 +126,13 @@
   display: flex;
   margin: 32px 0 67px;
   padding: 0 40px;
+  gap: 20px 50px;
 
   @include block_767 {
     flex-direction: column;
     padding: 0;
   }
 
-  &>*~* {
-    margin-left: 50px;
-
-    @include block_767 {
-      margin-left: 0;
-      margin-top: 20px;
-    }
-  }
 }
 
 .about-omics-quote__figure {
@@ -149,6 +140,9 @@
 
   img {
     border-radius: 6px;
+    width: 268px;
+    height: 277px;
+    max-width: 100%;
   }
 
   @include block_767 {
@@ -178,9 +172,7 @@
   flex-direction: column;
   justify-content: center;
 
-  &>*~* {
-    margin-top: 16px !important;
-  }
+  row-gap: 16px;
 }
 
 .about-omics__subtitle {
@@ -194,7 +186,7 @@
 }
 
 .omics-text {
-  &>*~* {
-    margin-top: 24px;
-  }
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }
