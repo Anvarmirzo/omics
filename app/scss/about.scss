@@ -168,6 +168,14 @@
   align-items: center;
   margin-top: 8px;
   gap: 8px;
+
+  a {
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
 
 .team__description {

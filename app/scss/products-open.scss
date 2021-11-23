@@ -6,6 +6,13 @@
   background-repeat: no-repeat;
   border-radius: 0 0 6px 6px;
 
+  @include block_575 {
+    background-position: right;
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   &.omics-iobe {
     background-image: url('../img/news-hero/2.jpg');
   }
@@ -39,6 +46,10 @@
   font-size: 48px;
   text-align: center;
   color: #FFFFFF;
+
+  @include block_575 {
+    font-size: 35px;
+  }
 }
 
 .products-open__subtitle {
@@ -47,6 +58,10 @@
   text-align: center;
   letter-spacing: 0.005em;
   color: $white_500;
+
+  @include block_575 {
+    font-size: 18px;
+  }
 }
 
 .products-open-header__content {

@@ -5,6 +5,7 @@ export function navEvent() {
 		const nav = document.querySelector('.nav-menu');
 		const body = document.querySelector('body');
 
+		btn.classList.toggle('opened');
 		nav.classList.toggle('active');
 		nav.classList.contains('active')
 			? body.classList.toggle('hidden')
