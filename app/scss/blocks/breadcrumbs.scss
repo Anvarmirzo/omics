@@ -14,5 +14,10 @@
 
   a {
     margin-left: 4px;
+    transition: 0.3s all;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
